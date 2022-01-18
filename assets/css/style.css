@@ -89,14 +89,74 @@ body {
   background-color: #FFED00;
 }
 
+.rejilla .primero div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rejilla .primero div p {
+  margin-top: -20px;
+  margin-left: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #009FE3;
+  -webkit-transform: matrix(1, -0.05, 0.07, 1, 0, 0);
+          transform: matrix(1, -0.05, 0.07, 1, 0, 0);
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.rejilla .primero div p span {
+  font-size: 160px;
+  font-weight: 400;
+}
+
+.rejilla .primero div img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: -200px;
+  mix-blend-mode: multiply;
+}
+
 .rejilla .segundo {
   grid-column: span 2;
-  background-color: #00C31A;
+  background-color: #00c31a;
+  background-image: url("../img/pile-of-old-newspapers-and-magazines_br.jpg");
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+}
+
+.rejilla .segundo p {
+  margin: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 60px;
+  font-weight: 500;
 }
 
 .rejilla .tercero {
   grid-column: span 4;
   background-color: #FF0000;
+  background-image: url("../img/julio-verne-dos-anos-de-vacaciones-ilustracion-b86wek.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-position: center;
+  background-size: fill;
+}
+
+.rejilla .tercero p {
+  margin-left: 500px;
+  margin-top: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 40px;
+}
+
+.rejilla .tercero p span {
+  font-size: 70px;
+  font-weight: 900;
 }
 
 .rejilla .cuarto {
@@ -104,32 +164,140 @@ body {
   background-color: #fff;
 }
 
+.rejilla .cuarto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: rotate(13.26deg);
+          transform: rotate(13.26deg);
+}
+
 .rejilla .quinto {
   grid-column: span 2;
+  overflow: hidden;
+}
+
+.rejilla .quinto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .rejilla .sexto {
   grid-column: span 2;
   background-color: #009FE3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rejilla .sexto img {
+  width: 50%;
+  padding: 20px;
+  margin-left: 40px;
+}
+
+.rejilla .sexto p {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 50px;
+  width: 60%;
+  margin-top: -20px;
+  margin-left: 40px;
 }
 
 .rejilla .septimo {
   grid-column: span 2;
   background-color: #FFED00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rejilla .septimo div {
+  width: 30%;
+  background-image: url("../img/mikado_03.jpg");
+  background-position: center;
+  background-size: fill;
+}
+
+.rejilla .septimo p {
+  width: 60%;
+  margin-left: 20px;
+}
+
+.rejilla .septimo p span {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 60px;
 }
 
 .rejilla .octavo {
   grid-column: span 2;
   background-color: #00C31A;
+  background-image: url("../img/pile-of-old-newspapers-and-magazines_br.jpg");
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+}
+
+.rejilla .octavo p {
+  margin: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 60px;
+  font-weight: 500;
 }
 
 .rejilla .noveno {
   grid-column: span 3;
   background-color: #009FE3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rejilla .noveno img {
+  width: 30%;
+  padding: 20px;
+  margin-left: 40px;
+}
+
+.rejilla .noveno p {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 50px;
+  width: 60%;
+  margin-top: -20px;
+  margin-left: 40px;
 }
 
 .rejilla .decimo {
   grid-column: span 2;
   background-color: #00C31A;
+  background-image: url("../img/pile-of-old-newspapers-and-magazines_br.jpg");
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+}
+
+.rejilla .decimo p {
+  margin: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+footer {
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */
