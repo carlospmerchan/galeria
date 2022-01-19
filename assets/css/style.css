@@ -350,4 +350,15 @@ footer {
 .grid_articulo .json {
   grid-column: span 2;
 }
+
+.imagen {
+  width: 900px;
+  height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
 /*# sourceMappingURL=style.css.map */
