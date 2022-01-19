@@ -1,5 +1,7 @@
 .cabecera {
   height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 100px;
 }
@@ -7,9 +9,13 @@
 .cabecera .logo {
   height: 100%;
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 1em 0.4em;
-  align-items: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .cabecera .logo img {
@@ -65,8 +71,10 @@ body {
 }
 
 .rejilla {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
   grid-gap: 1em;
   height: 100%;
 }
@@ -93,6 +101,8 @@ body {
 }
 
 .rejilla .primero div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -101,7 +111,8 @@ body {
   margin-left: 60px;
   font-family: 'Times New Roman', Times, serif;
   color: #009FE3;
-  transform: matrix(1, -0.05, 0.07, 1, 0, 0);
+  -webkit-transform: matrix(1, -0.05, 0.07, 1, 0, 0);
+          transform: matrix(1, -0.05, 0.07, 1, 0, 0);
   font-size: 65px;
   font-weight: bold;
 }
@@ -113,7 +124,8 @@ body {
 
 .rejilla .primero div img {
   width: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-top: -200px;
   mix-blend-mode: multiply;
 }
@@ -166,8 +178,10 @@ body {
 .rejilla .cuarto img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  transform: rotate(13.26deg);
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: rotate(13.26deg);
+          transform: rotate(13.26deg);
 }
 
 .rejilla .quinto {
@@ -178,14 +192,20 @@ body {
 .rejilla .quinto img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .rejilla .sexto {
   grid-column: span 2;
   background-color: #009FE3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .rejilla .sexto img {
@@ -206,6 +226,8 @@ body {
 .rejilla .septimo {
   grid-column: span 2;
   background-color: #FFED00;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -246,8 +268,13 @@ body {
 .rejilla .noveno {
   grid-column: span 3;
   background-color: #009FE3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .rejilla .noveno img {
@@ -290,11 +317,13 @@ footer {
   padding: 10px;
   font-weight: 500;
   border-radius: 10px;
-  width: 80%;
+  width: 60%;
 }
 
 .nav_articulo ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 0;
 }
@@ -313,6 +342,7 @@ footer {
 
 .nav_articulo ul .azul2 {
   background: #009FE3;
+  cursor: pointer;
 }
 
 .nav_articulo ul .lila {
@@ -325,17 +355,22 @@ footer {
 
 .adornos {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .adornos li {
   margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .adornos li .circulo {
-  background-color: black;
   width: 20px;
   height: 20px;
   border-radius: 50px;
@@ -343,22 +378,224 @@ footer {
 }
 
 .grid_articulo {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid_articulo .json {
-  grid-column: span 2;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .imagen {
   width: 900px;
   height: 500px;
   overflow: hidden;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
   margin-bottom: 20px;
-  cursor: pointer;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 110px;
+  line-height: 80px;
+}
+
+#detalle {
+  border-right: 2px solid;
+  padding-right: 30px;
+}
+
+.imagen_lateral {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.imagen_lateral img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.lateral {
+  padding: 20px;
+  grid-column: span 2;
+}
+
+.lateral ul {
+  font-size: 20px;
+}
+
+.lateral ul li {
+  margin-left: 40px;
+}
+
+.JUGO {
+  width: 300px;
+  height: 300px;
+  background-color: #00C31A;
+  background-image: url("../img/pile-of-old-newspapers-and-magazines_br.jpg");
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+}
+
+.JUGO p {
+  margin: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .cabecera {
+    margin-bottom: 20px;
+  }
+  .cabecera .logo img {
+    width: 30%;
+  }
+  .cabecera .logo p {
+    font-size: 1em;
+    width: 30%;
+  }
+  .cabecera .menu .menu_ul {
+    font-size: 14px;
+  }
+  .cabecera .menu .menu_ul li {
+    margin-bottom: 5px;
+  }
+  .cabecera .menu .menu_ul .amarillo, .cabecera .menu .menu_ul .azul, .cabecera .menu .menu_ul .rojo, .cabecera .menu .menu_ul .verde {
+    width: 100%;
+  }
+  .rejilla {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .rejilla .articulos {
+    height: 30vh;
+  }
+  .rejilla .primero {
+    grid-column: span 2;
+  }
+  .rejilla .primero span {
+    font-size: 16px;
+  }
+  .rejilla .primero div p {
+    margin-top: 0;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .rejilla .primero div p span {
+    font-size: 100px;
+  }
+  .rejilla .primero img {
+    margin-top: 0;
+  }
+  .rejilla .segundo, .rejilla .octavo, .rejilla .decimo {
+    grid-column: span 1;
+  }
+  .rejilla .segundo p, .rejilla .octavo p, .rejilla .decimo p {
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .rejilla .tercero {
+    grid-column: span 1;
+  }
+  .rejilla .tercero p {
+    line-height: 20px;
+    margin: 20px;
+    margin-top: 80px;
+  }
+  .rejilla .tercero p span {
+    font-size: 40px;
+  }
+  .rejilla .cuarto {
+    grid-column: span 1;
+  }
+  .rejilla .quinto {
+    grid-column: span 1;
+  }
+  .rejilla .sexto, .rejilla .noveno {
+    grid-column: span 2;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .rejilla .sexto p, .rejilla .noveno p {
+    margin: 20px;
+    font-size: 35px;
+  }
+  .rejilla .septimo {
+    grid-column: span 1;
+  }
+  .rejilla .septimo p {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .rejilla .septimo p span {
+    font-size: 20px;
+  }
+  .rejilla .decimo {
+    display: none;
+  }
+  .nav_articulo ul li {
+    font-size: 14px;
+  }
+  .grid_articulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #detalle {
+    border: none;
+    padding-right: 0;
+  }
+  .imagen {
+    width: 100%;
+  }
+  .JUGO {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cabecera {
+    height: 100%;
+  }
+  .cabecera .logo p {
+    width: 100%;
+  }
+  .seccion {
+    width: 100%;
+  }
+  .nav_articulo ul li {
+    font-size: 8px;
+  }
+  .adornos li {
+    margin-right: 10px;
+    font-size: 9px;
+  }
+  .imagen {
+    height: 300px;
+  }
+  .rejilla {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

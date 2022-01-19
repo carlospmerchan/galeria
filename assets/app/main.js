@@ -33,3 +33,7 @@ fetch("assets/app/data.json")
             item.addEventListener("click", mostrarArticulo, true)
         })
     });
+let recargar = document.querySelector(".azul2");
+recargar.addEventListener("click", e => {
+    window.location.reload();
+})
